@@ -1,0 +1,91 @@
+form.sign-in {
+    position: fixed;
+    top: 50%;
+    left: -310px;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px 30px;
+    background-color: var(--main-color);
+    box-shadow: var(--main-box-shadow);
+    border-radius: 10px ;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 310px;
+    transition: var(--main-transition);
+    opacity: 0;
+}
+form.sign-in.open {
+    opacity: 1;
+    left: 50%;
+}
+form.sign-in h1{
+    font-size: 54px;
+    text-align: center;
+    margin: 0 0 40px;
+    text-shadow: 0 0 10px #777;
+    color: var(--blue-color);
+}
+form.sign-in input:not([type="submit"]) {
+    outline: none;
+    border: 1px solid var(--alt-color);
+    border-radius: 10px;
+    background: none;
+    padding: 10px;
+    color: var(--font-color);
+    font-size: 16px;
+    margin: 10px 20px;
+}
+form.sign-in input:not([type="submit"]):hover{
+    border: 1px solid var(--blue-color);
+}
+form.sign-in input:not([type="submit"]):focus {
+    border: 1px solid var(--blue-alt-color);
+}
+form.sign-in input:not([type="submit"]):focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+form.sign-in input:not([type="submit"]):focus::-ms-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+form.sign-in input:not([type="submit"]):focus::placeholder  {
+    opacity: 0;
+    transition: .3s;
+}
+form.sign-in input[type="submit"]{
+    height: 40px;
+    margin: 0 20px;
+    background-color: var(--blue-color);
+    border:none;
+    border-radius: 4px;
+    color: #CCC;
+    font-weight: bold;
+    cursor: pointer;
+}
+form.sign-in input[type="submit"]:hover{
+    background-color: var(--blue-alt-color);
+    color: #FFF;
+}
+
+form.sign-in p {
+    padding: 10px;
+    margin: 10px;
+}
+form.sign-in p a {
+    font-weight: bold;
+    color: var(--blue-color);
+}
+form.sign-in div.go-back {
+    font-size: 30px;
+    color: var(--blue-color);
+    padding: 10px;
+}
+
+form.sign-in div.go-back i {
+        cursor: pointer;
+}
+form.sign-in div.go-back i:hover {
+    color: var(--blue-alt-color);
+}

@@ -1,0 +1,148 @@
+form.sign-up {
+    position: fixed;
+    top: 50%;
+    left: -310px;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px 15px;
+    background-color: var(--main-color);
+    box-shadow: var(--main-box-shadow);
+    border-radius: 10px ;
+    z-index: 110;
+    gap: 10px;
+    width: 310px;
+    transition: var(--main-transition);
+    opacity: 0;
+    overflow: hidden;
+}
+form.sign-up.open {
+    opacity: 1;
+    left: 50%;
+}
+form.sign-up .close-back{
+    font-size: 30px;
+    color: var(--blue-color);
+    padding: 10px;
+}
+form.sign-up .close-back i:hover{
+    color: var(--blue-alt-color);
+}
+
+form.sign-up .first-box > :nth-child(n+1):not(h1):not(input),
+form.sign-up .second-box > :nth-child(n+1):not(input) {
+    padding: 8px;
+    color: var(--font-color);
+    margin: 8px;
+    font-size: 15px;
+}
+form.sign-up .first-box > input,
+form.sign-up .second-box > input {
+    outline: none;
+    border: 1px solid var(--alt-color);
+    background: none;
+    color: var(--font-color);
+    padding: 10px;
+    margin: 5px 16px;
+    border-radius: 10px;
+}
+
+form.sign-up .first-box > input:hover,
+form.sign-up .second-box > input:hover{
+    border: 1px solid var(--blue-color);
+}
+form.sign-up .first-box > input:focus ,
+form.sign-up .first-box > input:focus {
+    border: 1px solid var(--blue-alt-color);
+}
+form.sign-up .first-box > input:focus::-webkit-input-placeholder,
+form.sign-up .second-box > input:focus::-webkit-input-placeholder{
+    opacity: 0;
+    transition: .3s;
+}
+form.sign-up .first-box > input:focus::-ms-input-placeholder,
+form.sign-up .second-box > input:focus::-ms-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+form.sign-up .first-box > input:focus::placeholder,
+form.sign-up .second-box > input:focus::placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+form.sign-up .sign-up-boxes {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+form.sign-up .first-box,
+form.sign-up .second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    overflow: hidden;
+    width: 0;
+    transition: var(--main-transition);
+}
+form.sign-up .first-box.show,
+form.sign-up .second-box.show {
+    width: 100%;
+}
+form.sign-up .first-box h1{
+    font-size: 54px;
+    text-align: center;
+    margin: 0 0 30px;
+    text-shadow: 0 0 10px #777;
+    color: var(--blue-color);
+}
+form.sign-up input.dob {
+    outline: none;
+    width: 190px;
+    height: 30px;
+    color: var(--font-color);
+    background-color: var(--alt-color);
+    border-radius: 4px;
+    padding: 4px;
+    border:none;
+}
+form.sign-up input[type="submit"],
+form.sign-up input[type="reset"],
+form.sign-up input[type="button"]{
+    height: 40px;
+    width: 100%;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    color: #CCC;
+    font-weight: bold;
+    cursor: pointer;
+}
+form.sign-up input[type="submit"]:hover,
+form.sign-up input[type="reset"]:hover,
+form.sign-up input[type="button"]:hover{
+    background-color: var(--blue-alt-color);
+    color: #FFF;
+}
+form.sign-up .first-box .gender input{
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+}
+/* form.sign-up .second-box{
+    overflow: hidden;
+    display: none;
+} */
+
+form.sign-up .second-box .certificate-file {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form.sign-up .certificate-file input {
+    outline: none;
+    width: 250px;
+    padding: 18px;
+    color: var(--font-color);
+    background-color: var(--alt-color);
+    border-radius: 4px;
+    border:none;
+}

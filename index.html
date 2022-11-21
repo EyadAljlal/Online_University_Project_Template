@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content="This is Arabic University for online 
+    education around the Arabian Motherland" />
+    <title>Arabic University</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <!-- Start Page  -->
+    <!-- Start  header -->
+    <div class="landing">
+        <header class="header" id="to-header">
+            <div class="container">
+                <h2 class="logo">
+                    <i class="fas fa-graduation-cap "></i>
+                    <span class="">Education</span>
+                </h2>
+                <div class="search-box">
+                <form action="" class="search-form">
+                    <i class="fas fa-search"></i>
+                    <input type="search" class="">
+                </form>
+            </div>
+                <div class="links-box">
+                    <ul class="links">
+                        <li><a href="#to-about">About</a></li>
+                        <li><a href="dashboard.html">Contact</a></li>
+                        <li class="signup-links">
+                            <a class="sign-up p-relative" href="#">Sign Up
+                            <div class="">
+                                <div class="student p-10 m-5 rad-10 ">As A Student</div>
+                                <div class="doctor p-10 m-5 rad-10">As A Doctor</div>
+                            </div>
+                        </a>
+                        </li>
+                        <li><a class="sign-in" href="#">Sign in</a></li>
+                        <li><a id="mode" style="font-size: 22px;" class="fas fa-palette" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End  header -->
+
+        <!-- Start Sign In Form  -->
+        <form class="sign-in" action="" method="post">
+            <div class="go-back">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <h1>Sign In</h1>
+            <input type="text" placeholder="Enter Academic no." required autofocus>
+            <input type="password" placeholder="Enter password" required>
+            <p>Haven't get student yet ? <a href="#" class="sign-up">Sign Up</a></p>
+            <input type="submit" value="LOGIN" >
+        </form>
+        <!-- End Sign In Form  -->
+        <!-- Start Sign Up Form  -->
+        <form class="sign-up" action="#" method="post">
+            <div class="close-back">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <div class="sign-up-boxes">
+            <div class="first-box show">
+                <h1>Sign Up</h1>
+                <input type="text"  name="fullName" placeholder="Full name" autofocus required>
+                <input type="email" name="email" placeholder="Email" required>
+                <div class="gender d-flex space-between">
+                    <label>Gender :</label>
+                    <label class="d-flex center" for="g1">  <input type="radio" name="gender" id="g1" checked>Male</label>
+                    <label class="d-flex center" for="g2"> <input type="radio" name="gender" id="g2">Femal </label>
+                </div>
+               <div class="bod d-flex space-between">
+                    <label for="dob">Birthday :</label>
+                    <input class="dob" type="date">
+               </div>
+                <div class="btns d-flex space-between">
+                    <!-- <input type="reset" value="Reset"> -->
+                    <input type="button" class="btn-next" value="Next">
+                </div>
+            </div>
+            <div class="second-box">
+                <div class="country d-flex space-between" >
+                    <label for="country">Country :</label>
+                    <select  id="country">
+                        <optgroup class="opt" label="Islamic Count">
+                            <option id="opt" value="1">Yemen</option>
+                            <option id="opt" value="2">Egept </option>
+                            <option id="opt" value="2">Egept </option>
+                            <option id="opt" value="3">Sudia Arabia</option>
+                            <option id="opt" value="3">Sudia Arabia</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="city d-flex space-between" >
+                    <label for="city">City :</label>
+                    <select  id="city">
+                        <optgroup class="opt" label="Islamic Count">
+                            <option id="opt" value="1">Taiz</option>
+                            <option id="opt" value="2">Sanaa </option>
+                            <option id="opt" value="2">Aden </option>
+                            <option id="opt" value="3">Hadramoot</option>
+                            <option id="opt" value="3">Maarib</option>
+                        </optgroup>
+                    </select>
+                </div>
+                    <input type="text" name="phoneNumber" placeholder="Phone number" required>
+                <div class="certificate-file">
+                    <label for="file-id">High School Cirtificate :</label>
+                    <input type="file" id="file-id" name="certifiateFile"placeholder="choose file" required>
+                </div>
+                <div class="btns d-flex space-between">
+                    <!-- <input type="reset" value="Reset"> -->
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+        </form>
+        <!-- End Sign Up Form  -->
+
+        <!-- Start Landing Section -->
+        <div class="intro">
+            <div class="container">
+                <div class="parag">
+                    <h1>Start <span>L</span>earning <span>W</span>ith <span>U</span>s !</h1>
+                    <p> 
+                        Your University in your hands. Now ... don't worry about the studing ,
+                        you can study from this moment <b> <i>free</i> </b>&amp;<strong><i>online</i></strong>
+                        ,if you are High School Graduate
+                        Click Below button to study with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <i class='fa fa-angle-double-down' data-section=".services"></i>
+    </div>
+    </div>
+    <!-- End Landing  -->
+
+    <!-- Start navigation -->
+    <div class="nav">
+        <div class="go-back"><i class="fas fa-arrow-left"></i></div>
+        <div class="nav-box">
+            <a href="#" class="element">
+                <i class="fas fa-university"></i>
+                <span>Faculities</span>
+            </a>
+            <a href="#" class="element">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Cources</span>
+            </a>
+            <a href="#" class="element">
+                <i class="fa fa-book-open"></i>
+                <span>Library</span>
+            </a>
+            <a href="#" class="element">
+                <i class="fa fa-language"> </i>
+                <span>Language</span>
+            </a>
+            <a href="#" class="element">
+                <i class="fa fa-map-marker"></i>
+                <span>Location</span>
+            </a>
+            <a href="#" class="element">
+                <i class="fas fa-question-circle"></i>
+                <span>Help</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Start About Us  -->
+    <div class="about-us">
+        <h1 class="h1-title">About Us</h1>
+        <div class="container">
+            <div class="about-box">
+                <img src="imgs/about_us.jpg">
+                <div class="text-box">
+                    <h1><span>W</span>ellcome
+                        <span>T</span>o <span>O</span>nline <span>C</span>lass <span>E</span>ducation !
+                    </h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum maiores officia ipsa quasi. Nulla,
+                        provident fuga. Placeat corrupti dolore, itaque ea suscipit ab fugit! Quisquam nihil nobis
+                        commodi quaerat officiis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Us  -->
+
+    <!-- Start Services  -->
+    <div class="services">
+        <h1 class="h1-title">Services</h1>
+        <div class="container">
+            <div class="text-box">
+                <h1><span>W</span>hat
+                    <span>A</span>re <span>W</span>e <span>P</span>rovide <span>T</span>o
+                    <span>Y</span>ou
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, facere! Sit harum earum maiores odio
+                    minus iusto consequuntur
+                </p>
+            </div>
+            <div class="services-box">
+                <div class="service-box">
+                    <i class="fas fa-book-open "></i>
+                    <h2>Book Library</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, facere! Sit harum earum maiores
+                        odio
+                        minus iusto consequuntur
+                    </p>
+                </div>
+                <div class="service-box">
+                    <i class="fa fa-award  "></i>
+                    <h2>Scholarship</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, facere! Sit harum earum maiores
+                        odio
+                        minus iusto consequuntur
+                    </p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-user-tie "></i>
+                    <h2>Skilled Lectures</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, facere! Sit harum earum maiores
+                        odio
+                        minus iusto consequuntur
+                    </p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-project-diagram  "></i>
+                    <h2>Home Projects</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, facere! Sit harum earum maiores
+                        odio
+                        minus iusto consequuntur
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Services  -->
+
+    <!-- Start Cources  -->
+    <div class="cources">
+        <h1 class="h1-title">Best Cources</h1>
+        <div class="container">
+            <span class="cource-box">
+                <img src="imgs/Engineering/SE_1.jpg" alt="">
+                <div class="deatails">
+                    <span>4 YEARS</span>
+                    <h4>Software Engineering</h4>
+                </div>
+            </span>
+            <span class="cource-box">
+                <img src="imgs/Engineering/Cyber_3.jpg" alt="">
+                <div class="deatails">
+                    <span>3 YEARS</span>
+                    <h4>Cyber Security</h4>
+                </div>
+            </span>
+            <span class="cource-box">
+                <img src="imgs/Engineering/AI_2.jpg" alt="">
+                <div class="deatails">
+                    <span>3 YEARS</span>
+                    <h4>Artificial intelligence </h4>
+                </div>
+            </span>
+            <span class="cource-box">
+                <img src="imgs/Engineering/Data_Analysis_1.jpg" alt="">
+                <div class="deatails">
+                    <span>4 YEARS</span>
+                    <h4>Data Science</h4>
+                </div>
+            </span>
+            <span class="cource-box">
+                <img src="imgs/Engineering/Robot_1.jpg" alt="">
+                <div class="deatails">
+                    <span>4 YEARS</span>
+                    <h4>Robotics</h4>
+                </div>
+            </span>
+        </div>
+    </div>
+    <!-- End Faculities  -->
+    <!-- Satrt Contact Us -->
+    <div class="contact">
+        <div class="container">
+            <h1 class="h1-title">Contact Us</h1>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="name">
+                    <input type="text" placeholder="Your Phone" name="phoneNo">
+                    <input type="text" placeholder="Your Email" name="email">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea name="textArea" placeholder="Your Message" name="message"></textarea>
+                    <input type="submit" name="btnSend" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="container">
+            <div class="other-links">
+                <ul>
+                    <h3>Services</h3>
+                    <li><a href="#"> Electronic services</a></li>
+                    <li><a href="#">Student guide</a></li>
+                    <li><a href="#" id="to-about">About us</a></li>
+                </ul>
+                <ul>
+                    <h3>Online Libraries</h3>
+                    <li><a href="http//www.books-library.net">Our Library</a></li>
+                    <li><a href="http//www.noor-book.com">Noor book</a></li>
+                    <li><a href="http//www.books-library.net">Free books</a></li>
+
+                </ul>
+                <ul>
+                    <h3>Online Libraries</h3>
+                    <li><a href="http//www.books-library.net">Our Library</a></li>
+                    <li><a href="http//www.noor-book.com">Noor book</a></li>
+                    <li><a href="http//www.books-library.net">Free books</a></li>
+
+                </ul>
+                <ul>
+                    <h3>Other Sites</h3>
+                    <li><a href="http//www.amazon.com">Amazon</a> </li>
+                    <li> <a href="http//www.alibaba.com">Alibaba</a></li>
+                    <li> <a href="http//www.gethub.com">Gethub</a></li>
+                </ul>
+            </div>
+            <h1 class="footer-text"><span>O</span>nline <span>L</span>earning</h1>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="#www.facebook.com" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#www.twitter.com" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#www.youtube.com" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mailto:\\aljlalayad1902014@gmail.com" class="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+    </div>
+    <button class="fa fa-angle-double-up go-up"></button>
+    <script src="JS/main.js"></script>
+    <script src="JS/signUp.js"></script>
+    <script src="js/colorMode.js"></script>
+
+</body>
+
+</html>
