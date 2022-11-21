@@ -4,8 +4,6 @@ document.querySelector(".header .search-form i").addEventListener('click', (e) =
     document.querySelector(".header .search-form input").classList.toggle("open");
     document.querySelector(".header .search-form input").focus();
 });
-
-
 document.querySelector("header .container .logo i").addEventListener('click', (e) => {
     document.querySelector(".nav").classList.add("open");
 });
@@ -52,5 +50,8 @@ document.querySelector("form.sign-in .go-back i").addEventListener('click', (e) 
     document.documentElement.removeChild(overlay);
 });
 
+document.querySelector(".sign-in .login-button").onclick = ()=>{
+    location.href = "dashboard.html";
+}
 
 
