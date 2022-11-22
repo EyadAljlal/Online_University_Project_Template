@@ -55,3 +55,10 @@ window.addEventListener('scroll', (ele) => {
         });
     };
 });
+
+document.querySelector(".head .search").addEventListener("click",(e)=>{
+    document.querySelector(".head .search input").focus();
+});
+document.querySelector(".head .icons a").addEventListener("click",(e)=>{
+    e.preventDefault();
+});

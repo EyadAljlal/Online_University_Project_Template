@@ -98,13 +98,16 @@ header .container .links-box {
 header .container .links-box .sign-up > div {
     position: absolute;
     width: 140px;
-    padding: 5px;
-    background-color: var(--alt-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--main-color);
     border-radius: 10px;
     left: 0;
-    bottom: -114px;
+    border: 1.5px solid var(--alt-color);
+    bottom: -108px;
     font-size: 15px;
     display: none;
+    
 }
 header .container .links-box .sign-up > div:before {
     content: "";
@@ -118,7 +121,7 @@ header .container .links-box .sign-up > div:before {
 
 }
 .links-box .sign-up > div div:hover{
-    background-color: var(--main-color);
+    background-color: var(--alt-color);
 }
 .links-box .signup-links a:hover > div {
     display: block;

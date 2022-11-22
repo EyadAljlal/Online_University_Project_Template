@@ -116,6 +116,14 @@ ul {
 .content {
     overflow: hidden;
 }
+.content .head .search {
+    border-radius: 25px;
+    
+}
+.content .head .search:hover {
+    background-color: var(--hover-color);
+
+}
 .content .head .search::before {
     font-family: "Font Awesome 5 Free";
     content: "\f002";
@@ -128,23 +136,25 @@ ul {
     font-size: 16px;
 }
 .content .head .search input{
-    padding-left: 31px;
-    border: 2px solid var(--alt-color);
     color: var(--font-color);
     background-color: var(--main-color);
-    width: 160px;
+    width: 40px;
     font-size: 14px;
     transition: var(--main-transition);
+    border-radius: 25px;
+}
+.content .head .search:hover input  {
+    background-color: var(--hover-color);
 }
 .content .head .search input:focus {
     width: 210px;
-    border-color: var(--hover-color);
+    padding-left: 30px;
 }
 .content .head .search input:focus::placeholder {
    opacity: 0;
 }
 .content .head .icons a.new{
-    font-size: 30px;
+    font-size: 25px;
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -155,32 +165,25 @@ ul {
 .content .head .icons a.new > div {
     position: absolute;
     width: 190px;
-    height: 170px;
-    padding: 15px;
     background-color: var(--main-color);
     border-radius: 10px;
     left: -15px;
-    bottom: -182px;
+    bottom: -124px;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid var(--alt-color);
     display: none;
     z-index: 100;
 }
-@media (max-width:797px) {
-    .content .head .icons a.new > div {
-        left: -144px;
-    }
-}
 .content .head .icons a.new:hover > div {
     display: block;
  }
 .content .head .icons a.new > div .add {
     display: block;
-    padding: 10px;
+    padding: 10px 0 10px 5px;
     width: 100%;
     border-radius: 6px;
-    margin: 5px;
+    font-weight: bold;
 }
 .content .head .icons a.new > div:before {
     content: "";
@@ -191,11 +194,6 @@ ul {
     border-width: 13px;
     border-style: solid;
     border-bottom-color: var(--alt-color);
-}
-@media (max-width:797px) {
-    .content .head .icons a.new > div:before {
-        left: 150px;
-    }
 }
 
 .content .head .icons a.new > div span:hover ,
